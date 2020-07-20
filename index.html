@@ -11,6 +11,7 @@
   <body>
 
     <h1>I am a professional Indian and a skid.</h1>
+    <p id="countdown"></p>
     <p>
       I run @VerioNetwork and @ProteusNetwork
     </p>
@@ -40,5 +41,17 @@
     </div>
 
   </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script type="text/javascript">
+    const countdownElement = document.querySelector('#countdown');
+    
+    function updateCountdown() {
+      const from = moment('august 21, 2020').from();
+      countdownElement.innerText = `My birthday is ${from}`;
+    }
+
+    this.updateCountdown();
+  </script>
 
 </html>
